@@ -12,6 +12,8 @@ name: Build x64 OpenWrt
 
 on:
   repository_dispatch:
+  schedule:
+  - cron: 0 1 1 * *
   workflow_dispatch:
     inputs:
       ssh:
